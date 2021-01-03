@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services Section</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- START SECTION SERVICES -->
+    <section class="section-services">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="header-section">
+                        <h2 class="title">Exclusive Services</h2>
+                        <p class="description">This is our Services section. Find out about some services provided to
+                            you guys</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fab fa-battle-net"></i>
+                            </span>
+                            <h3 class="title">Global coverage</h3>
+                            <p class="description">We provide two apps where you can be social to people, can share
+                                experiences,
+                                tips, blogs and many other stuffs. We to have a Chat application where you can talk to
+                                any one in
+                                world about any discussion or topics. And our apps cover the whole world. It can be used
+                                anywhere
+                                the only thing you need is a good network and a device to open our website.
+                            </p>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+                <!-- / End Single Service -->
+                <!-- Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fab fa-asymmetrik"></i>
+                            </span>
+                            <h3 class="title"> Direct Chat Application</h3>
+                            <p class="description">Here you can find people all over the world and can have a
+                                conversation
+                                on whatever topic you want. This chat application is really prograssive and responsive.
+                                So
+                                no problem you can use it anywhere you only need is a device like phone or laptop to
+                                open it with
+                                good network and a browser.
+                            </p>
+                            <a href="#" class="learn-more">Join Us Today</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+                <!-- / End Single Service -->
+                <!-- Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fab fa-artstation"></i>
+                            </span>
+                            <h3 class="title">Direct Social App</h3>
+                            <p class="description">Here you can socialize to people in the whole world.
+                                You can share your own experience, tips, blogs and some other stuff.
+                                from which people can know more or share more. This is a really good way to
+                                give good tips for studies and fitness for this new year so people live a
+                                healthy and fit life.
+                            </p>
+                            <a href="#" class="learn-more">Join Us Today</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+
+    </section>
+
+    <style>
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-services {
+            font-family: "Poppins", sans-serif;
+            background-color: #e6edf7;
+            color: #202020;
+            padding-top: 115px;
+            padding-bottom: 120px;
+        }
+
+        .section-services .header-section {
+            margin-bottom: 34px;
+        }
+
+        .section-services .header-section .title {
+            position: relative;
+            padding-bottom: 14px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .section-services .header-section .title:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #ff4500;
+            border-radius: 3px;
+        }
+
+        .section-services .header-section .title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(30px);
+            width: 10px;
+            height: 3px;
+            background-color: #504f93;
+            border-radius: 3px;
+        }
+
+        .section-services .header-section .description {
+            font-size: 14px;
+            color: #282828;
+        }
+
+        .section-services .single-service {
+            position: relative;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            overflow: hidden;
+        }
+
+        .section-services .single-service .content {
+            position: relative;
+            z-index: 20;
+        }
+
+        .section-services .single-service .circle-before {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            transform: translate(40%, -40%);
+            width: 150px;
+            height: 150px;
+            background-color: #ff4500;
+            border: 6px solid #504f93;
+            border-radius: 50%;
+            opacity: 0.5;
+            z-index: 10;
+            transition: all .6s;
+        }
+
+        .section-services .single-service:hover .circle-before {
+            width: 100%;
+            height: 100%;
+            transform: none;
+            border: 0;
+            border-radius: 0;
+            opacity: 1;
+        }
+
+        .section-services .single-service .icon {
+            display: inline-block;
+            margin-bottom: 26px;
+            width: 70px;
+            height: 70px;
+            background-color: #ff4500;
+            border-radius: 5px;
+            line-height: 70px;
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            transition: all .3s;
+        }
+
+        .section-services .single-service:hover .icon {
+            background-color: #fff;
+            color: #ff4500;
+        }
+
+        .section-services .single-service .title {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 23px;
+            transition: color .3s;
+        }
+
+        .section-services .single-service:hover .title {
+            color: #fff;
+        }
+
+        .section-services .single-service .description {
+            margin-bottom: 20px;
+            font-size: 14px;
+            transition: color .3s;
+        }
+
+        .section-services .single-service:hover .description {
+            color: #fff;
+        }
+
+        .section-services .single-service a {
+            position: relative;
+            font-size: 18px;
+            color: #202020;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color .3s;
+        }
+
+        .section-services .single-service:hover a {
+            color: #fff;
+        }
+
+        .section-services .single-service a:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #ff4500;
+            transition: background-color .3s;
+        }
+
+        .section-services .single-service:hover a:after {
+            background-color: #fff;
+        }
+    </style>
+    <!-- / END SECTION SERVICES -->
+
+</body>
+
+</html>
