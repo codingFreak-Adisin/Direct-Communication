@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navigation Bar</title> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo">Direct Help</li>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Services and Apps</a></li>
+            <li class="items"><a href="#">Our Team</a></li>
+            <li class="items"><a href="https://sign-up-page-direct.netlify.app/">Sign Up</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Happy New Year by Direct Help <br><span>2021</span></h2>
+    </section>
+    <section>
+
+    </section>
+
+    <script>
+        function stars() {
+            const count = 200;
+            const section = document.querySelector('section');
+            var i = 0;
+
+            while (i < count) {
+                const star = document.createElement('i');
+                const x = Math.floor(Math.random() * window.innerWidth)
+                const y = Math.floor(Math.random() * window.innerHeight)
+
+                const size = Math.random() * 4;
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                const duration = Math.random() * 2;
+
+                star.style.animationDelay = 2 + duration + 's';
+                section.appendChild(star);
+                i++
+            }
+        }
+        stars();
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+
+</html>
